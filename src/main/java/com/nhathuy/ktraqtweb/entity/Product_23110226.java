@@ -61,7 +61,7 @@ public class Product_23110226 {
     @JoinColumn(name = "sellerId")
     private Seller_23110226 seller;
 
-    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<CartItem_23110226> cartItems = new LinkedHashSet<>();
 }
 

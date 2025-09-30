@@ -25,7 +25,7 @@ public class UserRoles_23110226 {
     @Column(name = "roleName")
     private String roleName;
 
-    @OneToMany(mappedBy = "role", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "role", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Users_23110226> users = new LinkedHashSet<>();
 }
 

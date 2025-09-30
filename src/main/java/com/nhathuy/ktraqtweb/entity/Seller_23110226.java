@@ -31,10 +31,10 @@ public class Seller_23110226 {
     @Column(name = "status")
     private Integer status;
 
-    @OneToMany(mappedBy = "seller", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "seller", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Users_23110226> users = new LinkedHashSet<>();
 
-    @OneToMany(mappedBy = "seller", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "seller", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Product_23110226> products = new LinkedHashSet<>();
 }
 

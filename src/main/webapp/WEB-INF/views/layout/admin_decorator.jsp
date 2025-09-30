@@ -16,9 +16,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
         }
         body {
-            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             min-height: 100vh;
             display: flex;
